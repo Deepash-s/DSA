@@ -28,6 +28,6 @@ def secondLargest(arr):
         elif num < largest and num > sLargest:
             sLargest = num
             
-    return sLargest
+    return sLargest if sLargest != float('-inf') else None
 
 print(secondLargest([-1,-32,-43,-74,-22,-44]))
